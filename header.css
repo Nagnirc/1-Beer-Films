@@ -1,0 +1,202 @@
+.header {
+    background-color: rgb(67, 145, 171, 0.4);
+    border-bottom-width: 1px;
+    border-bottom-style: solid; 
+    border-bottom-color: rgb(67, 145, 171);
+
+    height: 125px;
+    width: 100%;
+  
+    display: flex;
+    /*flex-direction: row;*/
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; 
+}
+  
+.left-section {
+    display: flex 1fr;
+    align-items: center;    
+}
+
+.middle-section {
+    display: block;
+    flex: 1;
+    height: 120;
+    align-items: center;
+    justify-content: center;
+    /*background-color: pink;*/
+}
+
+/*this is for the 1 beer films title in the center*/
+.title-menu {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    /*background-color: blue;*/
+}
+
+.middle-title {
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    Color: white;
+    background-color: Black;
+    border: solid;
+    border-color: goldenrod;
+    border-width: 1px;
+    border-radius: 25px;
+}
+
+.title {
+    font-family: 'Cinzel', serif;
+    font-weight: 300;
+    font-style: normal;
+    justify-items: center;
+    align-items: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    
+}
+/*This is the end of the code for the 1 beer film title in th middle*/
+
+/*This is the begining for the code for the menu bar*/
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 40px;
+    color: red;
+    
+}
+
+.menu-bar ul {
+    list-style: none;
+    /*display: inline-flex;*/
+    margin: 0;
+    padding: 0;
+ 
+    
+    
+   }
+
+.menu-bar ul li {
+    /*padding: 0px 30px;*/
+    /*position: relative;*/
+    float: left;
+    width: 120px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .75);
+    /*opacity: 0.75;*/
+    line-height: 40px;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+
+.menu-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 27px;
+    display: block;
+    transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+    background-color: green;
+}
+
+
+
+/*
+.photo-pic2 {
+    position: abolute;
+    left: 0;
+    top: -50%;
+    opacity: 0;
+}
+
+.photo-pic3 {
+    position: abolute;
+    left: 0;
+    top: -50%;
+    opacity: 0;
+}
+*/
+
+.photo-dropdown {
+    display: none;
+}
+
+.photo-dropdown ul li a {
+    font-size: 20px;
+}
+
+.photo-pop-picture {
+    display: none;
+}
+.menu-bar ul li .photo-dropdown:hover .photo-pop-picture {
+    display: block;
+    width: 200px;
+    position:fixed;
+    margin-top: 15px;
+    margin-left: 210px;
+    opacity: 1;
+}
+
+.menu-bar ul li:hover .photo-dropdown {
+    display: block;
+    
+}
+
+/*This is the begining of the code for the image in the dropdown*/
+.wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%, -50%);
+}
+
+.img-area {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 10% auto 0;
+}
+
+.img-area img {
+    position: absolute;
+    left: 0;
+    height: 100px;
+    width: 200px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img-area img.img-front:hover {
+    opacity: 0;
+    /*cursor: pointer;*/
+}
+/*This is the end of the code for the image in the dropdown*/
+
+.right-section {
+    display: flex 1fr;
+    align-items: center;
+}
+
+.beer-logo {
+    height: 125px;
+    border-radius: 62.5px;
+}
