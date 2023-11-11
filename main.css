@@ -1,0 +1,144 @@
+.main-grid {
+    margin-top: 16.5vh;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    /*height: 1280px;*/
+    height: 82.75vh;
+    width: 100%;
+    column-gap: 10px;
+    /*padding-bottom: 20PX;*/
+    /*Background-color: pink;*/
+    z-index: 20;
+}
+
+.section-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.vids {
+    position: relative;
+    padding-left: 1px;    
+    flex-direction: column;
+    flex: 1;
+    /*height: 680px;*/
+    height: 100%;
+    width: 230px;
+    background-color: rgb(67, 145, 171, 0.4);
+    z-index: 50;
+    overflow: scroll;
+}
+
+.vid-border {
+    border-color: rgb(95, 95, 95);
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 6px;
+    margin-right: 6px;
+    transition: all 0.5s;
+}
+
+.vid-border:hover {
+    background-color: rgb(186, 186, 186, 0.4);
+}
+
+.vid-title {
+    margin-top: 6px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    color: rgb(92, 17, 17);
+    font-size: 20px;
+}
+/*Oh I am good*/
+.vid-border:hover .vid-title {
+    color: black;
+}
+
+.youtube-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 8px;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.youtubeIcon {
+    flex: 150px;
+    height: 38px;
+}
+
+.bf-link {
+    flex: 120px;
+    Margin-top: 6px;
+    padding-right: 10px;
+    padding-left: 5px;
+    font-size: 23px;
+    Border-radius: 5px;
+}
+
+.ut-thumbnail {
+    width: 190px;
+    padding-left: 10px;
+}
+/*Oh I am good*/
+.vid-border:hover .ut-thumbnail {
+    width: 200px;
+    /*padding-left: 10px;*/
+}
+
+.funFactsContainer {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    z-index: 50;
+    /*background-color: yellow;*/
+}
+
+.catCommon {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    /*background-color: rgb(67, 145, 171, 0.4);*/
+    background: radial-gradient(rgb(5, 221, 245, 0.1), rgb(6, 150, 253, 0.2));
+}
+
+.philippines {
+    flex-direction: column;
+}
+
+.movies {
+    flex-direction: column;
+}
+
+.music {
+    flex-direction: column;
+}
+
+.food {
+    flex-direction: column;
+}
+
+.following {
+    flex-direction: column;
+}
+
+.program {
+    flex-direction: column;
+}
+
+
+/*
+.visitors {
+    position:relative;
+    font-size: 1rem;
+    z-index: 10;
+}
+*/
+
+
